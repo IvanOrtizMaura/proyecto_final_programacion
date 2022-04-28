@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="372.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="372.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Asignaturas">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Cursos">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Profesores">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Centro">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Text layoutX="43.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Datos Personales" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Black" size="30.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="74.0" fitWidth="71.0" layoutX="150.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/kisspng-user-profile-computer-icons-login-user-avatars-5b0d9431e004b5.1250351715276165619176.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="31.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DNI" />
+      <TextField editable="false" layoutX="75.0" layoutY="200.0" prefHeight="25.0" prefWidth="110.0" />
+      <Text layoutX="197.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" />
+      <TextField editable="false" layoutX="253.0" layoutY="200.0" prefHeight="25.0" prefWidth="110.0" />
+      <Text layoutX="25.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Primer" />
+      <Text layoutX="21.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido" />
+      <TextField editable="false" layoutX="75.0" layoutY="236.0" prefHeight="25.0" prefWidth="110.0" />
+      <Text layoutX="197.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido" />
+      <TextField editable="false" layoutX="253.0" layoutY="236.0" prefHeight="25.0" prefWidth="110.0" />
+      <Text layoutX="10.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nacimiento" />
+      <TextField editable="false" layoutX="75.0" layoutY="272.0" prefHeight="25.0" prefWidth="110.0" />
+      <Text layoutX="197.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teléfono" />
+      <TextField layoutX="253.0" layoutY="272.0" prefHeight="25.0" prefWidth="110.0" />
+      <Text layoutX="196.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Segundo" />
+   </children>
+</Pane>
