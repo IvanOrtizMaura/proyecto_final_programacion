@@ -10,11 +10,15 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="372.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <MenuBar prefHeight="25.0" prefWidth="372.0">
         <menus>
+            <Menu mnemonicParsing="false" text="Inicio">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
           <Menu mnemonicParsing="false" text="Asignaturas">
             <items>
               <MenuItem mnemonicParsing="false" text="Close" />
@@ -44,7 +48,7 @@
       </Text>
       <ImageView fitHeight="74.0" fitWidth="71.0" layoutX="150.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../Downloads/kisspng-user-profile-computer-icons-login-user-avatars-5b0d9431e004b5.1250351715276165619176.png" />
+            <Image url="@Icono_avatar.png" />
          </image>
       </ImageView>
       <Text layoutX="31.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DNI" />
