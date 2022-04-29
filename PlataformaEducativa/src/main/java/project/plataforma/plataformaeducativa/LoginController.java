@@ -26,11 +26,11 @@ public class LoginController {
             ResultSet rs = stat.executeQuery(query);
             if(rs.next()){
 
-                if(rs.getString("pin") == pin.getText()){
+                if(rs.getString("pin").equals(pin.getText())){
                     pin.setText("Login correcto");
                 }
                 else{
-                    pin.setText("Contraseña incorrecta");
+                    pin.setText("Contraseña incorrecta ");
                 }
             }
             else{
