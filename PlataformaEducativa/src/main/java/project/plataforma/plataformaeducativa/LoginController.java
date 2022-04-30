@@ -1,6 +1,7 @@
 package project.plataforma.plataformaeducativa;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 
 import java.sql.ResultSet;
@@ -30,11 +31,19 @@ public class LoginController {
                     pin.setText("Login correcto");
                 }
                 else{
-                    pin.setText("Contraseña incorrecta ");
+                    Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setHeaderText(null);
+                    alert.setTitle("Error!");
+                    alert.setContentText("Contraseña incorrecta");
+                    alert.showAndWait();
                 }
             }
             else{
-                pin.setText("Login incorrecto");
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setHeaderText(null);
+                alert.setTitle("Error!");
+                alert.setContentText("Login incorrecto");
+                alert.showAndWait();
             }
         }
         catch (SQLException e){
