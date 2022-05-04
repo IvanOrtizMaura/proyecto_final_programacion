@@ -53,6 +53,8 @@ public class LoginController {
 
                         Scene scene = new Scene(root);
                         Stage stage = new Stage();
+                        stage.setTitle("Eduform - " + alumnoLogueado.nombre + " " + alumnoLogueado.apellido1 + " " +
+                                alumnoLogueado.apellido2);
                         stage.initModality(Modality.APPLICATION_MODAL);
                         stage.setScene(scene);
                         stage.show();
