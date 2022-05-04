@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
@@ -9,7 +11,7 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="372.0" style="-fx-background-radius: 0;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Text layoutX="131.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Centro">
+      <Text layoutX="131.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Centro">
          <font>
             <Font name="Arial Black" size="30.0" />
          </font>
@@ -18,7 +20,7 @@
          <graphic>
             <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../../../../Downloads/Home-Icon.png" />
+                  <Image url="@Home-Icon.png" />
                </image>
             </ImageView>
          </graphic>
@@ -27,7 +29,7 @@
          <graphic>
             <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../../../../Downloads/Asignaturas-icon.png" />
+                  <Image url="@Asignaturas-icon.png" />
                </image>
             </ImageView>
          </graphic>
@@ -36,7 +38,7 @@
          <graphic>
             <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../../../../Downloads/Curso-icon.png" />
+                  <Image url="@Profesor-icon.png" />
                </image>
             </ImageView>
          </graphic>
@@ -45,7 +47,7 @@
          <graphic>
             <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../../../../Downloads/Profesor-icon.png" />
+                  <Image url="@Curso-icon.png" />
                </image>
             </ImageView>
          </graphic>
@@ -54,10 +56,17 @@
          <graphic>
             <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../../../../Downloads/Centro-icon.png" />
+                  <Image url="@Centro-icon.png" />
                </image>
             </ImageView>
          </graphic>
       </Button>
+      <TableView layoutX="36.0" layoutY="75.0" prefHeight="250.0" prefWidth="300.0">
+        <columns>
+          <TableColumn prefWidth="100.0" text="Centro" />
+          <TableColumn prefWidth="100.0" text="Teléfono" />
+            <TableColumn prefWidth="100.0" text="Direccion" />
+        </columns>
+      </TableView>
    </children>
 </Pane>

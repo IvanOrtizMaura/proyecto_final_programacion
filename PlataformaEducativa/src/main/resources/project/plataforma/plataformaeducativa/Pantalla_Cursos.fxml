@@ -16,7 +16,7 @@
             <Font name="Arial Black" size="30.0" />
          </font>
       </Text>
-      <TableView layoutX="36.0" layoutY="76.0" prefHeight="250.0" prefWidth="300.0">
+      <TableView layoutX="37.0" layoutY="75.0" prefHeight="250.0" prefWidth="300.0">
         <columns>
           <TableColumn prefWidth="150.0" text="Curso" />
           <TableColumn prefWidth="150.0" text="Profesor" />
