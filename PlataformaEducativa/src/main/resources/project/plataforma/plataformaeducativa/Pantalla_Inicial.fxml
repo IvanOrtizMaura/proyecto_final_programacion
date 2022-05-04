@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -11,38 +10,74 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="372.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.plataforma.plataformaeducativa.InicialController">
    <children>
-      <MenuBar prefHeight="25.0" prefWidth="372.0">
-        <menus>
-            <Menu mnemonicParsing="false" text="Inicio" />
-          <Menu mnemonicParsing="false" text="Asignaturas" />
-          <Menu mnemonicParsing="false" text="Cursos" />
-          <Menu mnemonicParsing="false" text="Profesores" />
-            <Menu mnemonicParsing="false" text="Centro" />
-        </menus>
-      </MenuBar>
-      <Text layoutX="43.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Datos Personales" textAlignment="CENTER">
+      <Text layoutX="43.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Datos Personales" textAlignment="CENTER">
          <font>
             <Font name="Arial Black" size="30.0" />
          </font>
       </Text>
-      <ImageView fitHeight="74.0" fitWidth="71.0" layoutX="150.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="74.0" fitWidth="71.0" layoutX="150.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Icono_avatar.png" />
          </image>
       </ImageView>
-      <Text layoutX="31.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DNI" />
-      <TextField fx:id="infoDni" editable="false" layoutX="75.0" layoutY="200.0" prefHeight="25.0" prefWidth="110.0" />
-      <Text layoutX="197.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" />
-      <TextField fx:id="infoNombre" editable="false" layoutX="253.0" layoutY="200.0" prefHeight="25.0" prefWidth="110.0" />
-      <Text layoutX="25.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Primer" />
-      <Text layoutX="21.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido" />
-      <TextField fx:id="infoApellido1" editable="false" layoutX="75.0" layoutY="236.0" prefHeight="25.0" prefWidth="110.0" />
-      <Text layoutX="197.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido" />
-      <TextField fx:id="infoApellido2" editable="false" layoutX="253.0" layoutY="236.0" prefHeight="25.0" prefWidth="110.0" />
-      <Text layoutX="10.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nacimiento" />
-      <TextField fx:id="infoNacimiento" editable="false" layoutX="75.0" layoutY="272.0" prefHeight="25.0" prefWidth="110.0" />
-      <Text layoutX="197.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teléfono" />
-      <TextField fx:id="infoTelefono" layoutX="253.0" layoutY="272.0" prefHeight="25.0" prefWidth="110.0" />
-      <Text layoutX="196.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Segundo" />
+      <Text layoutX="31.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DNI" />
+      <TextField fx:id="infoDni" editable="false" layoutX="75.0" layoutY="177.0" prefHeight="25.0" prefWidth="110.0" />
+      <Text layoutX="197.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" />
+      <TextField fx:id="infoNombre" editable="false" layoutX="253.0" layoutY="177.0" prefHeight="25.0" prefWidth="110.0" />
+      <Text layoutX="25.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Primer" />
+      <Text layoutX="21.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido" />
+      <TextField fx:id="infoApellido1" editable="false" layoutX="75.0" layoutY="213.0" prefHeight="25.0" prefWidth="110.0" />
+      <Text layoutX="197.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido" />
+      <TextField fx:id="infoApellido2" editable="false" layoutX="253.0" layoutY="213.0" prefHeight="25.0" prefWidth="110.0" />
+      <Text layoutX="10.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nacimiento" />
+      <TextField fx:id="infoNacimiento" editable="false" layoutX="75.0" layoutY="249.0" prefHeight="25.0" prefWidth="110.0" />
+      <Text layoutX="197.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teléfono" />
+      <TextField fx:id="infoTelefono" layoutX="253.0" layoutY="249.0" prefHeight="25.0" prefWidth="110.0" />
+      <Text layoutX="196.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Segundo" />
+      <Button layoutX="163.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0; -fx-background-image: ..\..\..\..\..\Downloads\Home-Icon.png;">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Home-Icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="92.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0;">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Asignaturas-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="15.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0;">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Profesor-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="239.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0;">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Curso-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="308.0" layoutY="348.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0;">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Centro-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
    </children>
 </Pane>
