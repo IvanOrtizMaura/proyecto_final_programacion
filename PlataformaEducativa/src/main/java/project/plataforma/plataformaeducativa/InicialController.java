@@ -1,54 +1,40 @@
 package project.plataforma.plataformaeducativa;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.ResourceBundle;
 
 public class InicialController implements Initializable {
 
     @FXML
-    private TextField infoDni;
+    private TextField infoDni, infoNombre, infoApellido1, infoApellido2, infoNacimiento, infoTelefono;
 
     @FXML
-    private TextField infoNombre;
+    private Button Pantalla_Asignaturas, Pantalla_Centro, Pantalla_Curso, Pantalla_Profesores;
 
-    @FXML
-    private TextField infoApellido1;
-
-    @FXML
-    private TextField infoApellido2;
-
-    @FXML
-    private TextField infoNacimiento;
-
-    @FXML
-    private TextField infoTelefono;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
+        ArrayList<Button> ventanas = new ArrayList<Button>(Arrays.asList(Pantalla_Asignaturas, Pantalla_Centro,
+                Pantalla_Curso, Pantalla_Profesores));
+
         infoDni.setText(LoginController.alumnoLogueado.getDni());
-        infoDni.setFocusTraversable(false);
         infoNombre.setText(LoginController.alumnoLogueado.getNombre());
-        infoNombre.setFocusTraversable(false);
         infoApellido1.setText(LoginController.alumnoLogueado.getApellido1());
-        infoApellido1.setFocusTraversable(false);
         infoApellido2.setText(LoginController.alumnoLogueado.getApellido2());
-        infoApellido2.setFocusTraversable(false);
         infoNacimiento.setText(LoginController.alumnoLogueado.getNacimiento());
-        infoNacimiento.setFocusTraversable(false);
         infoTelefono.setText(LoginController.alumnoLogueado.getTelefono());
-        infoTelefono.setFocusTraversable(false);
+
+        Ventana.gestionarVentanas(ventanas);
 
     }
 
-    @FXML
-    public void pruebaB(){
-        infoTelefono.setText("ª");
-    }
+
 
 }

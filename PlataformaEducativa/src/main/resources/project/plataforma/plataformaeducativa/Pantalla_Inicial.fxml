@@ -21,20 +21,20 @@
          </image>
       </ImageView>
       <Text layoutX="31.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DNI" />
-      <TextField fx:id="infoDni" editable="false" layoutX="75.0" layoutY="177.0" prefHeight="25.0" prefWidth="110.0" />
+      <TextField fx:id="infoDni" editable="false" focusTraversable="false" layoutX="75.0" layoutY="177.0" prefHeight="25.0" prefWidth="110.0" />
       <Text layoutX="197.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" />
-      <TextField fx:id="infoNombre" editable="false" layoutX="253.0" layoutY="177.0" prefHeight="25.0" prefWidth="110.0" />
+      <TextField fx:id="infoNombre" editable="false" focusTraversable="false" layoutX="253.0" layoutY="177.0" prefHeight="25.0" prefWidth="110.0" />
       <Text layoutX="25.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Primer" />
       <Text layoutX="21.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido" />
-      <TextField fx:id="infoApellido1" editable="false" layoutX="75.0" layoutY="213.0" prefHeight="25.0" prefWidth="110.0" />
+      <TextField fx:id="infoApellido1" editable="false" focusTraversable="false" layoutX="75.0" layoutY="213.0" prefHeight="25.0" prefWidth="110.0" />
       <Text layoutX="197.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido" />
-      <TextField fx:id="infoApellido2" editable="false" layoutX="253.0" layoutY="213.0" prefHeight="25.0" prefWidth="110.0" />
+      <TextField fx:id="infoApellido2" editable="false" focusTraversable="false" layoutX="253.0" layoutY="213.0" prefHeight="25.0" prefWidth="110.0" />
       <Text layoutX="10.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nacimiento" />
-      <TextField fx:id="infoNacimiento" editable="false" layoutX="75.0" layoutY="249.0" prefHeight="25.0" prefWidth="110.0" />
+      <TextField fx:id="infoNacimiento" editable="false" focusTraversable="false" layoutX="75.0" layoutY="249.0" prefHeight="25.0" prefWidth="110.0" />
       <Text layoutX="197.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teléfono" />
-      <TextField fx:id="infoTelefono" layoutX="253.0" layoutY="249.0" prefHeight="25.0" prefWidth="110.0" />
+      <TextField fx:id="infoTelefono" focusTraversable="false" layoutX="253.0" layoutY="249.0" prefHeight="25.0" prefWidth="110.0" />
       <Text layoutX="196.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Segundo" />
-      <Button layoutX="163.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0; -fx-background-image: ..\..\..\..\..\Downloads\Home-Icon.png;">
+      <Button fx:id="Pantalla_Inicial" focusTraversable="false" layoutX="163.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0; -fx-background-color: #CDEEF3;">
          <graphic>
             <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -43,7 +43,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button layoutX="92.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0;">
+      <Button fx:id="Pantalla_Asignaturas" focusTraversable="false" layoutX="90.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0;">
          <graphic>
             <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -52,7 +52,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button layoutX="15.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0;">
+      <Button fx:id="Pantalla_Profesores" focusTraversable="false" layoutX="18.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0;">
          <graphic>
             <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -61,7 +61,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button layoutX="239.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0;">
+      <Button fx:id="Pantalla_Curso" focusTraversable="false" layoutX="234.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0;">
          <graphic>
             <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -70,7 +70,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button layoutX="308.0" layoutY="348.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0;">
+      <Button fx:id="Pantalla_Centro" focusTraversable="false" layoutX="305.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0;">
          <graphic>
             <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
                <image>

@@ -18,6 +18,6 @@
             <Font name="Arial Black" size="30.0" />
          </font>
       </Text>
-      <Button layoutX="98.0" layoutY="242.0" mnemonicParsing="false" onAction="#Acceder" text="Login" />
+      <Button layoutX="98.0" layoutY="242.0" mnemonicParsing="false" onAction="#acceder" text="Login" />
    </children>
 </Pane>
