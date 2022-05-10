@@ -9,14 +9,19 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
+<<<<<<< Updated upstream
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="372.0" style="-fx-background-radius: 0;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="project.plataforma.plataformaeducativa.CentroController">
+=======
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="372.0" style="-fx-background-radius: 0;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+>>>>>>> Stashed changes
    <children>
       <Text layoutX="131.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Centro">
          <font>
             <Font name="Arial Black" size="30.0" />
          </font>
       </Text>
+<<<<<<< Updated upstream
       <TableView layoutX="36.0" layoutY="75.0" prefHeight="250.0" prefWidth="300.0">
         <columns>
           <TableColumn prefWidth="100.0" text="Centro" />
@@ -25,6 +30,9 @@
         </columns>
       </TableView>
       <Button fx:id="Pantalla_Inicial" focusTraversable="false" layoutX="162.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0;">
+=======
+      <Button layoutX="161.0" layoutY="355.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0; -fx-background-image: ..\..\..\..\..\Downloads\Home-Icon.png;">
+>>>>>>> Stashed changes
          <graphic>
             <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -33,7 +41,11 @@
             </ImageView>
          </graphic>
       </Button>
+<<<<<<< Updated upstream
       <Button fx:id="Pantalla_Asignaturas" focusTraversable="false" layoutX="89.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0;">
+=======
+      <Button layoutX="90.0" layoutY="355.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0;">
+>>>>>>> Stashed changes
          <graphic>
             <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -42,7 +54,11 @@
             </ImageView>
          </graphic>
       </Button>
+<<<<<<< Updated upstream
       <Button fx:id="Pantalla_Profesores" focusTraversable="false" layoutX="17.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0;">
+=======
+      <Button layoutX="13.0" layoutY="355.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0;">
+>>>>>>> Stashed changes
          <graphic>
             <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -51,7 +67,11 @@
             </ImageView>
          </graphic>
       </Button>
+<<<<<<< Updated upstream
       <Button fx:id="Pantalla_Curso" focusTraversable="false" layoutX="233.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0;">
+=======
+      <Button layoutX="237.0" layoutY="355.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0;">
+>>>>>>> Stashed changes
          <graphic>
             <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -60,7 +80,11 @@
             </ImageView>
          </graphic>
       </Button>
+<<<<<<< Updated upstream
       <Button fx:id="Pantalla_Centro" focusTraversable="false" layoutX="304.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0; -fx-background-color: #CDEEF3;">
+=======
+      <Button layoutX="306.0" layoutY="353.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0;">
+>>>>>>> Stashed changes
          <graphic>
             <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -69,5 +93,15 @@
             </ImageView>
          </graphic>
       </Button>
+<<<<<<< Updated upstream
+=======
+      <TableView layoutX="36.0" layoutY="75.0" prefHeight="250.0" prefWidth="300.0">
+        <columns>
+          <TableColumn prefWidth="100.0" text="Centro" />
+          <TableColumn prefWidth="100.0" text="Teléfono" />
+            <TableColumn prefWidth="100.0" text="Direccion" />
+        </columns>
+      </TableView>
+>>>>>>> Stashed changes
    </children>
 </Pane>

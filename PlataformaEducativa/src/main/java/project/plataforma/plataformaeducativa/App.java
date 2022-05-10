@@ -27,7 +27,7 @@ public class App extends Application {
 
     public void BDDConnection(){
         try{
-           dbCon = DriverManager.getConnection("jdbc:mysql://localhost:3306/", "root", "cacaca");
+           dbCon = DriverManager.getConnection("jdbc:mysql://localhost:3306/", "root", "root");
         }
         catch(SQLException e){
             e.printStackTrace();
