@@ -61,10 +61,10 @@
          </graphic>
       </Button>
       <Text layoutX="96.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Centro" />
-      <TextField layoutX="154.0" layoutY="151.0" />
+      <TextField fx:id="infoNombreCentro" layoutX="154.0" layoutY="151.0" />
       <Text layoutX="91.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teléfono" />
-      <TextField layoutX="155.0" layoutY="188.0" />
+      <TextField fx:id="infoTelefonoCentro" layoutX="155.0" layoutY="188.0" />
       <Text layoutX="89.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Direccion" />
-      <TextField layoutX="155.0" layoutY="225.0" />
+      <TextField fx:id="infoDireccionCentro" layoutX="155.0" layoutY="225.0" />
    </children>
 </Pane>
