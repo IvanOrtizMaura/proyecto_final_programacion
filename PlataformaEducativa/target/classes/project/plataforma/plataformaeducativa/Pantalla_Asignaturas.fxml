@@ -9,12 +9,8 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<<<<<<< Updated upstream
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="372.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
 fx:controller="project.plataforma.plataformaeducativa.AsignaturasController">
-=======
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="372.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
->>>>>>> Stashed changes
    <children>
       <Text layoutX="88.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asignaturas">
          <font>
@@ -28,11 +24,7 @@ fx:controller="project.plataforma.plataformaeducativa.AsignaturasController">
             <TableColumn prefWidth="100.0" text="Profesor" />
         </columns>
       </TableView>
-<<<<<<< Updated upstream
       <Button fx:id="Pantalla_Inicial" focusTraversable="false" layoutX="163.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0;">
-=======
-      <Button layoutX="163.0" layoutY="352.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0; -fx-background-image: ..\..\..\..\..\Downloads\Home-Icon.png;">
->>>>>>> Stashed changes
          <graphic>
             <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -41,11 +33,7 @@ fx:controller="project.plataforma.plataformaeducativa.AsignaturasController">
             </ImageView>
          </graphic>
       </Button>
-<<<<<<< Updated upstream
       <Button fx:id="Pantalla_Asignaturas" focusTraversable="false" layoutX="90.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0; -fx-background-color: #CDEEF3;">
-=======
-      <Button layoutX="92.0" layoutY="352.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0;">
->>>>>>> Stashed changes
          <graphic>
             <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -54,11 +42,7 @@ fx:controller="project.plataforma.plataformaeducativa.AsignaturasController">
             </ImageView>
          </graphic>
       </Button>
-<<<<<<< Updated upstream
       <Button fx:id="Pantalla_Profesores" focusTraversable="false" layoutX="18.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0;">
-=======
-      <Button layoutX="15.0" layoutY="352.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0;">
->>>>>>> Stashed changes
          <graphic>
             <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -67,11 +51,7 @@ fx:controller="project.plataforma.plataformaeducativa.AsignaturasController">
             </ImageView>
          </graphic>
       </Button>
-<<<<<<< Updated upstream
       <Button fx:id="Pantalla_Curso" focusTraversable="false" layoutX="234.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0;">
-=======
-      <Button layoutX="239.0" layoutY="352.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0;">
->>>>>>> Stashed changes
          <graphic>
             <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -80,11 +60,7 @@ fx:controller="project.plataforma.plataformaeducativa.AsignaturasController">
             </ImageView>
          </graphic>
       </Button>
-<<<<<<< Updated upstream
       <Button fx:id="Pantalla_Centro" focusTraversable="false" layoutX="305.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0;">
-=======
-      <Button layoutX="308.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0;">
->>>>>>> Stashed changes
          <graphic>
             <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
