@@ -61,14 +61,14 @@
          </graphic>
       </Button>
       <Text layoutX="117.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" />
-      <TextField id="infoNombreProfesor" editable="false" layoutX="171.0" layoutY="99.0" prefHeight="25.0" prefWidth="112.0" />
+      <TextField fx:id="infoNombreProfesor" editable="false" layoutX="171.0" layoutY="99.0" prefHeight="25.0" prefWidth="112.0" />
       <Text layoutX="111.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido 1" />
-      <TextField id="infoApellido1Profesor" editable="false" layoutX="172.0" layoutY="130.0" prefHeight="25.0" prefWidth="112.0" />
+      <TextField fx:id="infoApellido1Profesor" editable="false" layoutX="172.0" layoutY="130.0" prefHeight="25.0" prefWidth="112.0" />
       <Text layoutX="112.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido 2" />
-      <TextField id="infoApellido2Profesor" editable="false" layoutX="171.0" layoutY="163.0" prefHeight="25.0" prefWidth="112.0" />
+      <TextField fx:id="infoApellido2Profesor" editable="false" layoutX="171.0" layoutY="163.0" prefHeight="25.0" prefWidth="112.0" />
       <Text layoutX="120.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Centro" />
-      <TextField id="infoCentroProfesor" editable="false" layoutX="171.0" layoutY="200.0" prefHeight="25.0" prefWidth="112.0" />
+      <TextField fx:id="infoCentroProfesor" editable="false" layoutX="171.0" layoutY="200.0" prefHeight="25.0" prefWidth="112.0" />
       <Text layoutX="90.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Departamento" />
-      <TextField id="infoDepartamentoProfesor" editable="false" layoutX="172.0" layoutY="235.0" prefHeight="25.0" prefWidth="112.0" />
+      <TextField fx:id="infoDepartamentoProfesor" editable="false" layoutX="172.0" layoutY="235.0" prefHeight="25.0" prefWidth="112.0" />
    </children>
 </Pane>
