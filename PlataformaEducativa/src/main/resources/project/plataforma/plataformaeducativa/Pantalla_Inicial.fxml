@@ -10,9 +10,9 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="372.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.plataforma.plataformaeducativa.InicialController">
    <children>
-      <Text layoutX="43.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Datos Personales" textAlignment="CENTER">
+      <Text layoutX="75.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Datos personales" textAlignment="CENTER">
          <font>
-            <Font name="Arial Black" size="30.0" />
+            <Font name="Georgia" size="30.0" />
          </font>
       </Text>
       <ImageView fitHeight="74.0" fitWidth="71.0" layoutX="150.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
@@ -78,6 +78,11 @@
                </image>
             </ImageView>
          </graphic>
+      </Button>
+      <Button focusTraversable="false" layoutX="278.0" layoutY="280.0" mnemonicParsing="false" onAction="#modificarTelefono" prefHeight="16.0" prefWidth="61.0" text="Modificar">
+         <font>
+            <Font size="10.0" />
+         </font>
       </Button>
    </children>
 </Pane>

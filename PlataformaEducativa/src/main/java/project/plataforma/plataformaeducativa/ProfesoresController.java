@@ -4,7 +4,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-
 import java.net.URL;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -35,32 +34,73 @@ public class ProfesoresController implements Initializable {
     public void consultarInfoProfesor(){
 
         Statement stat = null;
-        String query = "select " + App.BDD + ".profesor.* from " + App.BDD + ".profesor" +
-                " inner join " +
-                App.BDD + ".curso" +
-                " on " + App.BDD + ".profesor.dni = " + App.BDD + ".curso.dni_tutor" +
-                " inner join " +
+        String query = "select " + App.BDD + ".profesor.* from " + App.BDD + ".profesor " +
+                "inner join " +
+                App.BDD + ".curso " +
+                "on " + App.BDD + ".profesor.dni = " + App.BDD + ".curso.dni_tutor " +
+                "inner join " +
                 App.BDD + ".alumno " +
                 "on " + App.BDD + ".alumno.id_curso = " + App.BDD + ".curso.id " +
                 "where " + App.BDD + ".alumno.dni = '" + LoginController.alumnoLogueado.getDni() + "';";
-
-        System.out.println(query);
+        String dniTutorActual = "";
 
         try{
             stat = App.dbCon.createStatement();
             ResultSet rs = stat.executeQuery(query);
 
             if (rs.next()){
+                dniTutorActual = rs.getString("dni");
                 infoNombreProfesor.setText(rs.getString("nombre"));
                 infoApellido1Profesor.setText(rs.getString("apellido1"));
                 infoApellido2Profesor.setText(rs.getString("apellido2"));
+                infoDepartamentoProfesor.setText(obtenerDepProfesor(dniTutorActual));
             }
 
         }
         catch (SQLException e){
             e.printStackTrace();
         }
+        finally{
+            try{
+                stat.close();
+            }catch (SQLException e){
+                e.printStackTrace();
+            }
+        }
 
     }
-    
+
+    public String obtenerDepProfesor(String dni){
+
+        Statement stat = null;
+        String query = "select " + App.BDD + ".departamento.* from " + App.BDD + ".departamento " +
+                "inner join " +
+                App.BDD + ".profesor " +
+                "on " + App.BDD + ".profesor.id_departamento = " + App.BDD + ".departamento.id " +
+                "where " + App.BDD + ".profesor.dni = '" + dni + "';";
+        String nombreDepartamento = "";
+
+        try{
+            stat = App.dbCon.createStatement();
+            ResultSet rs = stat.executeQuery(query);
+
+            if (rs.next()){
+                nombreDepartamento = rs.getString("nombre");
+            }
+
+        }
+        catch (SQLException e){
+            e.printStackTrace();
+        }
+        finally{
+            try{
+                stat.close();
+            }catch (SQLException e){
+                e.printStackTrace();
+            }
+        }
+
+        return nombreDepartamento;
+
+    }
 }

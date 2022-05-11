@@ -46,7 +46,7 @@ public class LoginController {
                     Alert alert = new Alert(Alert.AlertType.ERROR);
                     alert.setHeaderText(null);
                     alert.setTitle("¡Error!");
-                    alert.setContentText("Contraseña incorrecta");
+                    alert.setContentText("Contraseña incorrecta.");
                     alert.show();
                 }
             }
@@ -54,12 +54,19 @@ public class LoginController {
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setHeaderText(null);
                 alert.setTitle("¡Error!");
-                alert.setContentText("Usuario incorrecto");
+                alert.setContentText("Usuario incorrecto.");
                 alert.showAndWait();
             }
         }
         catch (SQLException e){
             e.printStackTrace();
+        }
+        finally{
+            try{
+                stat.close();
+            }catch (SQLException e){
+                e.printStackTrace();
+            }
         }
 
     }

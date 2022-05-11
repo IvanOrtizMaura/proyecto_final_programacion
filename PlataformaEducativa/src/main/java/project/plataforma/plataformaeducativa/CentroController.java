@@ -4,7 +4,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-
 import java.net.URL;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -26,16 +25,17 @@ public class CentroController implements Initializable {
 
         ArrayList<Button> ventanas = new ArrayList<Button>(Arrays.asList(Pantalla_Asignaturas, Pantalla_Inicial,
                 Pantalla_Curso, Pantalla_Profesores));
-
         Ventana.gestionarVentanas(ventanas);
+        consultarInfoCentro();
 
     }
-    public void consultarInfoProfesor(){
+    public void consultarInfoCentro(){
         Statement stat = null;
-        String query = "select" + App.BDD + ".centro.* from " + App.BDD + ".centro" +
-                "inner join" +
-                App.BDD + ".alumno" +
-                "on "+ App.BDD+".centro.id = " + App.BDD + ".alumno.id_centro;";
+        String query = "select " + App.BDD + ".centro.* from " + App.BDD + ".centro " +
+                "inner join " +
+                App.BDD + ".alumno " +
+                "on "+ App.BDD+".centro.id = " + App.BDD + ".alumno.id_centro " +
+                "where " + App.BDD + ".alumno.dni = '" + LoginController.alumnoLogueado.getDni() + "';";
         try {
             stat = App.dbCon.createStatement();
             ResultSet rs = stat.executeQuery(query);
@@ -47,6 +47,13 @@ public class CentroController implements Initializable {
             }
         }catch (SQLException e){
             e.printStackTrace();
+        }
+        finally{
+            try{
+                stat.close();
+            }catch (SQLException e){
+                e.printStackTrace();
+            }
         }
 
     }
