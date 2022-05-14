@@ -1,0 +1,38 @@
+ALUMNO:
+
+DNI: 87654321A
+Nombre: Ivan
+Apellido1: Navarro
+Apellido2: Maura
+Fecha de nacimiento: 2004-11-25
+Teléfono: 912321234
+
+CENTRO:
+
+Nombre: IES Joan Alcover
+Teléfono: 922322133
+Dirección: Palma
+
+CURSO:
+
+Etapa: 2º Bachillerato
+Tutor: Miguel Garcia Campano
+
+ASIGNATURAS: 
+
+Nombre: Matemáticas Horas: 5 Profesor: Juan Martínez Andreas
+
+Nombre: Lengua castellana Horas: 4 Profesor: Ana Fernandez Rossi
+
+Nombre: Lengua catalana Horas: 4 Profesor: Sandra Santana Soliño
+
+Nombre: Lengua inglesa Horas: 3 Profesor: Íñigo Iglesias Casado
+
+Nombre: Biología Horas: 4 Profesor: Pepe Milano Álvarez
+
+TUTOR:
+
+Nombre: Miguel
+Apellido1: Garcia
+Apellido2: Campano
+Departamento: Ciencias sociales

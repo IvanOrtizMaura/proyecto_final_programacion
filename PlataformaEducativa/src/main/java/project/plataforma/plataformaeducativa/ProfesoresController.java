@@ -70,7 +70,7 @@ public class ProfesoresController implements Initializable {
 
     }
 
-    public String obtenerDepProfesor(String dni){
+    public static String obtenerDepProfesor(String dni){
 
         Statement stat = null;
         String query = "select " + App.BDD + ".departamento.* from " + App.BDD + ".departamento " +

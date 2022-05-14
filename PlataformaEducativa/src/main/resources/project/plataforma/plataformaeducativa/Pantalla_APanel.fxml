@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="231.0" prefWidth="203.0" style="-fx-background-color: #D9D3EF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.plataforma.plataformaeducativa.APanelController">
+   <children>
+      <Button layoutX="48.0" layoutY="130.0" mnemonicParsing="false" onAction="#ventanaAdd" style="-fx-background-color: #62E529;" text="Agregar alumno" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="46.0" layoutY="171.0" mnemonicParsing="false" onAction="#ventanaDel" style="-fx-background-color: #F25050;" text="Suprimir alumno" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="69.0" fitWidth="64.0" layoutX="71.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Admin-icon.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="159.0" layoutY="14.0" mnemonicParsing="false" onAction="#cerrarSesion" prefHeight="17.0" prefWidth="21.0" style="-fx-background-color: #E96161;">
+         <graphic>
+            <ImageView fitHeight="14.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Salir-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</Pane>

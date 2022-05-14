@@ -8,14 +8,14 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="372.0" style="-fx-background-radius: 0;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.plataforma.plataformaeducativa.CentroController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="372.0" style="-fx-background-radius: 0; -fx-background-color: #F4F5EB;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.plataforma.plataformaeducativa.CentroController">
    <children>
       <Text layoutX="74.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Centro educativo">
          <font>
             <Font name="Georgia" size="30.0" />
          </font>
       </Text>
-      <Button fx:id="Pantalla_Inicial" focusTraversable="false" layoutX="162.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0;">
+      <Button fx:id="Pantalla_Inicial" focusTraversable="false" layoutX="162.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0; -fx-background-color: #F5DF93;">
          <graphic>
             <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -24,7 +24,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="Pantalla_Asignaturas" focusTraversable="false" layoutX="89.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0;">
+      <Button fx:id="Pantalla_Asignaturas" focusTraversable="false" layoutX="89.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0; -fx-background-color: #F5DF93;">
          <graphic>
             <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -33,7 +33,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="Pantalla_Profesores" focusTraversable="false" layoutX="17.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0;">
+      <Button fx:id="Pantalla_Profesores" focusTraversable="false" layoutX="17.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0; -fx-background-color: #F5DF93;">
          <graphic>
             <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -42,7 +42,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="Pantalla_Curso" focusTraversable="false" layoutX="233.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0;">
+      <Button fx:id="Pantalla_Curso" focusTraversable="false" layoutX="233.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0; -fx-background-color: #F5DF93;">
          <graphic>
             <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -51,7 +51,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="Pantalla_Centro" focusTraversable="false" layoutX="304.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0; -fx-background-color: #CDEEF3;">
+      <Button fx:id="Pantalla_Centro" focusTraversable="false" layoutX="304.0" layoutY="350.0" mnemonicParsing="false" prefWidth="50.0" style="-fx-background-radius: 0; -fx-background-color: #FCC300;">
          <graphic>
             <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -60,11 +60,11 @@
             </ImageView>
          </graphic>
       </Button>
-      <Text layoutX="92.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" />
-      <TextField fx:id="infoNombreCentro" focusTraversable="false" layoutX="154.0" layoutY="151.0" />
-      <Text layoutX="91.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teléfono" />
-      <TextField fx:id="infoTelefonoCentro" focusTraversable="false" layoutX="155.0" layoutY="188.0" />
-      <Text layoutX="89.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dirección" />
-      <TextField fx:id="infoDireccionCentro" focusTraversable="false" layoutX="155.0" layoutY="225.0" />
+      <Text layoutX="81.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" />
+      <TextField fx:id="infoNombreCentro" focusTraversable="false" layoutX="143.0" layoutY="151.0" />
+      <Text layoutX="80.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teléfono" />
+      <TextField fx:id="infoTelefonoCentro" focusTraversable="false" layoutX="144.0" layoutY="188.0" />
+      <Text layoutX="78.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dirección" />
+      <TextField fx:id="infoDireccionCentro" focusTraversable="false" layoutX="144.0" layoutY="225.0" />
    </children>
 </Pane>

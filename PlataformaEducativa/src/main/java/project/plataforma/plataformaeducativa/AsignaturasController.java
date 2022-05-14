@@ -8,7 +8,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-
 import java.net.URL;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -75,6 +74,8 @@ public class AsignaturasController implements Initializable {
                 asignaturas.add(new Asignatura(rs.getString("nombre"),
                         Integer.parseInt(rs.getString("horas")),
                         obtenerProfesorAsignatura(rs.getString("dni_profesor"))));
+
+
             }
 
         }
@@ -91,7 +92,7 @@ public class AsignaturasController implements Initializable {
 
     }
 
-    public String obtenerProfesorAsignatura(String dni){
+    public static String obtenerProfesorAsignatura(String dni){
 
         Statement stat = null;
         String query = "select " + App.BDD + ".profesor.* from " + App.BDD + ".profesor " +

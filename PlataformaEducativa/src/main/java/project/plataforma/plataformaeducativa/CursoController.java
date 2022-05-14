@@ -61,7 +61,7 @@ public class CursoController implements Initializable {
 
     }
 
-    public String obtenerTutorCurso(String dni){
+    public static String obtenerTutorCurso(String dni){
 
         Statement stat = null;
         String query = "select " + App.BDD + ".profesor.* from " + App.BDD + ".profesor " +

@@ -1,0 +1,38 @@
+ALUMNO:
+
+DNI: 87654321B
+Nombre: Rodrigo
+Apellido1: Perez
+Apellido2: Lorca
+Fecha de nacimiento: 2010-11-16
+Teléfono: 912341123
+
+CENTRO:
+
+Nombre: IES Joan Alcover
+Teléfono: 922322133
+Dirección: Palma
+
+CURSO:
+
+Etapa: 1º ESO
+Tutor: Pedro Morales Ferrer
+
+ASIGNATURAS: 
+
+Nombre: Matemáticas Horas: 5 Profesor: Juan Martínez Andreas
+
+Nombre: Física Horas: 2 Profesor: Pepa García Campillo
+
+Nombre: Lengua inglesa Horas: 3 Profesor: Íñigo Iglesias Casado
+
+Nombre: Biología Horas: 4 Profesor: Pepe Milano Álvarez
+
+Nombre: Geografía Horas: 4 Profesor: Miguel Garcia Campano
+
+TUTOR:
+
+Nombre: Pedro
+Apellido1: Morales
+Apellido2: Ferrer
+Departamento: Artes

@@ -1,5 +1,6 @@
 package project.plataforma.plataformaeducativa;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
@@ -50,8 +51,9 @@ public class InicialController implements Initializable {
                 stat.executeUpdate("update " + App.BDD + ".alumno " +
                         "set telefono = " + infoTelefono.getText() +
                         " where dni = '" + LoginController.alumnoLogueado.getDni() + "';");
+                LoginController.alumnoLogueado.setTelefono(infoTelefono.getText());
                 nuevoTelefono = infoTelefono.getText();
-                Alert alert = new Alert(Alert.AlertType.ERROR);
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setHeaderText(null);
                 alert.setTitle("Información");
                 alert.setContentText("Número de teléfono modificado satisfactoriamente.");
@@ -79,6 +81,22 @@ public class InicialController implements Initializable {
         }
     }
 
+    @FXML
+    public void descargarDatos(){
 
+        Documentacion.extraerInfo();
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setHeaderText(null);
+        alert.setTitle("Información");
+        alert.setContentText("Datos del alumno almacenados en el fichero:\n" +
+                "Datos - " + LoginController.alumnoLogueado.getDni() + ".txt");
+        alert.show();
+    }
+
+    @FXML
+    public void cerrarSesion(ActionEvent e){
+        Ventana.cerrarVentanaActual(e);
+        Ventana.abrirVentana("Pantalla_Login");
+    }
 
 }

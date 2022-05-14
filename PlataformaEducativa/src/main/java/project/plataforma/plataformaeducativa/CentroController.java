@@ -19,7 +19,6 @@ public class CentroController implements Initializable {
     @FXML
     private Button Pantalla_Asignaturas, Pantalla_Inicial, Pantalla_Curso, Pantalla_Profesores;
 
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
@@ -29,6 +28,7 @@ public class CentroController implements Initializable {
         consultarInfoCentro();
 
     }
+
     public void consultarInfoCentro(){
         Statement stat = null;
         String query = "select " + App.BDD + ".centro.* from " + App.BDD + ".centro " +
@@ -40,6 +40,7 @@ public class CentroController implements Initializable {
             stat = App.dbCon.createStatement();
             ResultSet rs = stat.executeQuery(query);
             if (rs.next()) {
+
                 infoNombreCentro.setText(rs.getString("nombre"));
                 infoTelefonoCentro.setText(rs.getString("telefono"));
                 infoDireccionCentro.setText(rs.getString("direccion"));

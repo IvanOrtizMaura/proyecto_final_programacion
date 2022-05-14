@@ -8,18 +8,17 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class LoginController {
+public class ALoginController {
 
     @FXML
-    private TextField dni, pin;
+    private TextField usuario, contraseña;
 
-    public static Alumno alumnoLogueado;
 
     @FXML
     public void acceder(ActionEvent event){
 
         Statement stat = null;
-        String query = "select * from " + App.BDD + ".alumno where dni = '" + dni.getText() + "';";
+        String query = "select * from " + App.BDD + ".administrador where usuario = '" + usuario.getText() + "';";
 
         try{
 
@@ -27,23 +26,17 @@ public class LoginController {
             ResultSet rs = stat.executeQuery(query);
 
             if(rs.next()){
-                if(rs.getString("pin").equals(pin.getText())){
-
-                    alumnoLogueado = new Alumno (rs.getString("dni"), rs.getString("nombre"),
-                            rs.getString("apellido1"), rs.getString("apellido2"),
-                            rs.getString("fecha_nacimiento"), rs.getString("telefono"),
-                            Integer.parseInt(rs.getString("id_curso")),
-                            Integer.parseInt(rs.getString("id_centro")));
+                if(rs.getString("contraseña").equals(contraseña.getText())){
 
                     Ventana.cerrarVentanaActual(event);
-                    Ventana.abrirVentanaUsuario("Pantalla_Inicial");
+                    Ventana.abrirVentana("Pantalla_APanel");
 
                 }
                 else{
                     Alert alert = new Alert(Alert.AlertType.ERROR);
                     alert.setHeaderText(null);
                     alert.setTitle("¡Error!");
-                    alert.setContentText("PIN incorrecto.");
+                    alert.setContentText("Contraseña incorrecta.");
                     alert.show();
                 }
             }
@@ -51,7 +44,7 @@ public class LoginController {
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setHeaderText(null);
                 alert.setTitle("¡Error!");
-                alert.setContentText("DNI incorrecto.");
+                alert.setContentText("Usuario incorrecto.");
                 alert.showAndWait();
             }
         }
@@ -69,9 +62,8 @@ public class LoginController {
     }
 
     @FXML
-    public void modoAdmin(ActionEvent e){
+    public void modoUsuario(ActionEvent e){
         Ventana.cerrarVentanaActual(e);
-        Ventana.abrirVentana("Pantalla_ALogin");
+        Ventana.abrirVentana("Pantalla_Login");
     }
-
 }
