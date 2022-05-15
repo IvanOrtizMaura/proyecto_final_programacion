@@ -1,3 +1,8 @@
+/**
+ * @author Rodrigo García Calvo & Ivan Ortiz Maura
+ * @since 15/05/2022
+ */
+
 package project.plataforma.plataformaeducativa;
 
 import javafx.fxml.FXML;
@@ -13,6 +18,7 @@ public class DelController {
     public TextField delDNI;
 
     @FXML
+    //Suprime un alumno de la BDD a partir de su DNI.
     public void suprimirAlumno(){
 
         Statement stat  = null;
@@ -51,6 +57,7 @@ public class DelController {
     }
 
     @FXML
+    //Comprueba si el DNI introducido está asociado a algun alumno de la BDD.
     public boolean existeDNI(){
         Statement stat = null;
         String query = "select * from " + App.BDD + ".alumno where dni = '" + delDNI.getText() + "';";

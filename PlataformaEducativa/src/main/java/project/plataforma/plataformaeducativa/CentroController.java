@@ -1,3 +1,8 @@
+/**
+ * @author Rodrigo García Calvo & Ivan Ortiz Maura
+ * @since 15/05/2022
+ */
+
 package project.plataforma.plataformaeducativa;
 
 import javafx.fxml.FXML;
@@ -20,6 +25,7 @@ public class CentroController implements Initializable {
     private Button Pantalla_Asignaturas, Pantalla_Inicial, Pantalla_Curso, Pantalla_Profesores;
 
     @Override
+    //Asigna a cada uno de los objetos Button su función correspondiente.
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         ArrayList<Button> ventanas = new ArrayList<Button>(Arrays.asList(Pantalla_Asignaturas, Pantalla_Inicial,
@@ -29,6 +35,7 @@ public class CentroController implements Initializable {
 
     }
 
+    //Hace una consulta a la BDD para obtener la información del centro de un alumno concreto.
     public void consultarInfoCentro(){
         Statement stat = null;
         String query = "select " + App.BDD + ".centro.* from " + App.BDD + ".centro " +

@@ -1,10 +1,14 @@
+/**
+ * @author Rodrigo García Calvo & Ivan Ortiz Maura
+ * @since 15/05/2022
+ */
+
 package project.plataforma.plataformaeducativa;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
-
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -18,6 +22,7 @@ public class AddController {
     public DatePicker newNacimiento;
 
     @FXML
+    //Inserta un nuevo alumno en la BDD.
     public void agregarAlumno(){
 
         Statement stat = null;
@@ -84,6 +89,7 @@ public class AddController {
     }
 
     @FXML
+    //Comprueba que el alumno a insertar no esté repetido.
     public boolean alumnoRepetido(){
 
         Statement stat = null;

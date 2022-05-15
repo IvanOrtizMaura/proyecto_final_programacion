@@ -1,3 +1,8 @@
+/**
+ * @author Rodrigo García Calvo & Ivan Ortiz Maura
+ * @since 15/05/2022
+ */
+
 package project.plataforma.plataformaeducativa;
 
 import javafx.fxml.FXML;
@@ -22,6 +27,7 @@ public class CursoController implements Initializable {
 
 
     @Override
+    //Asigna a cada uno de los objetos Button su función correspondiente.
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         ArrayList<Button> ventanas = new ArrayList<Button>(Arrays.asList(Pantalla_Asignaturas, Pantalla_Centro,
@@ -30,6 +36,7 @@ public class CursoController implements Initializable {
         consultarInfoCurso();
     }
 
+    //Hace una consulta a la BDD para obtener la información del curso de un alumno concreto.
     public void consultarInfoCurso(){
         Statement stat = null;
         String query = "select " + App.BDD + ".curso.* from " + App.BDD + ".curso " +
@@ -61,6 +68,7 @@ public class CursoController implements Initializable {
 
     }
 
+    //Hace una consulta a la BDD para obtener el nombre del tutor del curso a partir de su DNI.
     public static String obtenerTutorCurso(String dni){
 
         Statement stat = null;

@@ -1,11 +1,11 @@
 ALUMNO:
 
-DNI: 87654321G
-Nombre: Hugo
-Apellido1: Mateo
-Apellido2: Jordano
-Fecha de nacimiento: 2004-02-15
-Teléfono: 621223932
+DNI: 87654321J
+Nombre: Juan
+Apellido1: Perniola
+Apellido2: Gonzalez
+Fecha de nacimiento: 2004-08-15
+Teléfono: 616213123
 
 CENTRO:
 
@@ -15,12 +15,14 @@ Dirección: Palma
 
 CURSO:
 
-Etapa: 2º Bachillerato
-Tutor: Miguel Garcia Campano
+Etapa: 1º Bachillerato
+Tutor: Juan Martínez Andreas
 
 ASIGNATURAS: 
 
 Nombre: Matemáticas Horas: 5 Profesor: Juan Martínez Andreas
+
+Nombre: Física Horas: 2 Profesor: Pepa García Campillo
 
 Nombre: Lengua castellana Horas: 4 Profesor: Ana Fernandez Rossi
 
@@ -28,11 +30,9 @@ Nombre: Lengua catalana Horas: 4 Profesor: Sandra Santana Soliño
 
 Nombre: Lengua inglesa Horas: 3 Profesor: Íñigo Iglesias Casado
 
-Nombre: Biología Horas: 4 Profesor: Pepe Milano Álvarez
-
 TUTOR:
 
-Nombre: Miguel
-Apellido1: Garcia
-Apellido2: Campano
-Departamento: Ciencias sociales
+Nombre: Juan
+Apellido1: Martínez
+Apellido2: Andreas
+Departamento: Matemáticas

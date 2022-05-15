@@ -1,3 +1,8 @@
+/**
+ * @author Rodrigo García Calvo & Ivan Ortiz Maura
+ * @since 15/05/2022
+ */
+
 package project.plataforma.plataformaeducativa;
 
 import javafx.event.ActionEvent;
@@ -16,6 +21,7 @@ public class LoginController {
     public static Alumno alumnoLogueado;
 
     @FXML
+    //Comprueba los credenciales para acceder al panel del alumno.
     public void acceder(ActionEvent event){
 
         Statement stat = null;
@@ -69,6 +75,7 @@ public class LoginController {
     }
 
     @FXML
+    //Permite cambiar a la ventana de inicio de sesión en modo administrador.
     public void modoAdmin(ActionEvent e){
         Ventana.cerrarVentanaActual(e);
         Ventana.abrirVentana("Pantalla_ALogin");

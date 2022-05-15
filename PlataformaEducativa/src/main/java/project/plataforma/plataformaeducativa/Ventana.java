@@ -1,3 +1,8 @@
+/**
+ * @author Rodrigo García Calvo & Ivan Ortiz Maura
+ * @since 15/05/2022
+ */
+
 package project.plataforma.plataformaeducativa;
 
 import javafx.event.ActionEvent;
@@ -13,6 +18,8 @@ import java.util.ArrayList;
 
 public class Ventana {
 
+    //Permite, mediante el uso de una expresión lambda, asignar a cada uno de los componentes de Button, de una
+    //lista pasada por parámetro su función correspondiente.
     public static void gestionarVentanas(ArrayList<Button> ventanas){
         ventanas.forEach(b -> b.setOnAction(e -> {
             Ventana.cerrarVentanaActual(e);
@@ -20,6 +27,7 @@ public class Ventana {
         }));
     }
 
+    //Permite abrir una ventana con el nombre de un alumno logueado como título.
     public static void abrirVentanaUsuario(String nombre) {
 
         try{
@@ -40,6 +48,7 @@ public class Ventana {
 
     }
 
+    //Permite abrir una ventana genérica.
     public static void abrirVentana(String nombre){
         try{
             FXMLLoader loader = new FXMLLoader(Ventana.class.getResource(nombre + ".fxml"));
@@ -56,6 +65,7 @@ public class Ventana {
         }
     }
 
+    //Permite cerrar la ventana en la cual este método es llamado.
     public static void cerrarVentanaActual(ActionEvent event){
         Node source = (Node) event.getSource();
         Stage actual = (Stage) source.getScene().getWindow();

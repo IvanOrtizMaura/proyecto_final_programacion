@@ -1,3 +1,8 @@
+/**
+ * @author Rodrigo García Calvo & Ivan Ortiz Maura
+ * @since 15/05/2022
+ */
+
 package project.plataforma.plataformaeducativa;
 
 import javafx.event.ActionEvent;
@@ -25,10 +30,12 @@ public class InicialController implements Initializable {
     private String nuevoTelefono = LoginController.alumnoLogueado.getTelefono();
 
     @Override
+    //Rellena los campos correspondientes al inicializar la ventana.
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         ArrayList<Button> ventanas = new ArrayList<Button>(Arrays.asList(Pantalla_Asignaturas, Pantalla_Centro,
                 Pantalla_Curso, Pantalla_Profesores));
+        Ventana.gestionarVentanas(ventanas);
 
         infoDni.setText(LoginController.alumnoLogueado.getDni());
         infoNombre.setText(LoginController.alumnoLogueado.getNombre());
@@ -37,11 +44,10 @@ public class InicialController implements Initializable {
         infoNacimiento.setText(LoginController.alumnoLogueado.getNacimiento());
         infoTelefono.setText(LoginController.alumnoLogueado.getTelefono());
 
-        Ventana.gestionarVentanas(ventanas);
-
     }
 
     @FXML
+    //Permite al usuario modificar su número de teléfono.
     public void modificarTelefono(){
         Statement stat = null;
         try{
@@ -82,6 +88,7 @@ public class InicialController implements Initializable {
     }
 
     @FXML
+    //Permite, mediante la clase Documentación, almacenar los datos del alumno en un fichero de texto.
     public void descargarDatos(){
 
         Documentacion.extraerInfo();
@@ -94,6 +101,7 @@ public class InicialController implements Initializable {
     }
 
     @FXML
+    //Permite volver a la ventana de inicio de sesión.
     public void cerrarSesion(ActionEvent e){
         Ventana.cerrarVentanaActual(e);
         Ventana.abrirVentana("Pantalla_Login");

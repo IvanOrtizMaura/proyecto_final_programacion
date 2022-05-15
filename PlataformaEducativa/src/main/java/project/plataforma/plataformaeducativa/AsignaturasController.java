@@ -1,3 +1,8 @@
+/**
+ * @author Rodrigo García Calvo & Ivan Ortiz Maura
+ * @since 15/05/2022
+ */
+
 package project.plataforma.plataformaeducativa;
 
 import javafx.collections.FXCollections;
@@ -36,6 +41,7 @@ public class AsignaturasController implements Initializable {
     ObservableList<Asignatura> asignaturas = FXCollections.observableArrayList();
 
     @Override
+    //Rellena los campos correspondientes al inicializar la ventana.
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         ArrayList<Button> ventanas = new ArrayList<Button>(Arrays.asList(Pantalla_Inicial, Pantalla_Centro,
@@ -51,6 +57,7 @@ public class AsignaturasController implements Initializable {
 
     }
 
+    //Hace una consulta a la BDD para obtener la lista de asignaturas de un alumno concreto.
     public void obtenerInfoAsignaturas(){
 
         Statement stat = null;
@@ -92,6 +99,7 @@ public class AsignaturasController implements Initializable {
 
     }
 
+    //Hace una consulta a la BDD para obtener el nombre del profesor de cada asignatura a partir de su DNI.
     public static String obtenerProfesorAsignatura(String dni){
 
         Statement stat = null;

@@ -1,3 +1,8 @@
+/**
+ * @author Rodrigo García Calvo & Ivan Ortiz Maura
+ * @since 15/05/2022
+ */
+
 package project.plataforma.plataformaeducativa;
 
 import java.io.FileWriter;
@@ -12,6 +17,7 @@ public class Documentacion {
 
     private static ArrayList<String> datosGlobales;
 
+    //Genera o sobreescribe un documento de texto con los datos asociados a un alumno concreto.
     public static void extraerInfo(){
 
         datosGlobales = new ArrayList<String>();
@@ -37,6 +43,9 @@ public class Documentacion {
         }
 
     }
+
+    //Conjunto de métodos que permiten, a partir de consultas a la BDD, obtener todos los datos en forma de String
+    //asociados a un alumno concreto.
 
     private static void datosAlumno(){
 

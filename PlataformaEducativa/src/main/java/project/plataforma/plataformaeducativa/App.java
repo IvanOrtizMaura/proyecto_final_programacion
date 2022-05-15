@@ -1,3 +1,8 @@
+/**
+ * @author Rodrigo García Calvo & Ivan Ortiz Maura
+ * @since 15/05/2022
+ */
+
 package project.plataforma.plataformaeducativa;
 
 import javafx.application.Application;
@@ -25,6 +30,7 @@ public class App extends Application {
         stage.show();
     }
 
+    //Establece la conexión con la BDD.
     public void BDDConnection(){
         try{
            dbCon = DriverManager.getConnection("jdbc:mysql://localhost:3306/", "root", "cacaca");

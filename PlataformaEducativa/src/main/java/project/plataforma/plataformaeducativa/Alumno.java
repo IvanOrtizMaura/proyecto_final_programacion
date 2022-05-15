@@ -1,3 +1,8 @@
+/**
+ * @author Rodrigo García Calvo & Ivan Ortiz Maura
+ * @since 15/05/2022
+ */
+
 package project.plataforma.plataformaeducativa;
 
 public class Alumno {
@@ -11,6 +16,7 @@ public class Alumno {
     int idCurso;
     int idCentro;
 
+    //Método constructor que permite crear un nuevo objeto alumno.
     public Alumno(String dni, String nombre, String apellido1, String apellido2, String nacimiento, String telefono,
                   int idCurso, int idCentro) {
         this.dni = dni;
@@ -23,6 +29,7 @@ public class Alumno {
         this.idCentro = idCentro;
     }
 
+    //Getters y setters.
     public String getDni() {
         return dni;
     }

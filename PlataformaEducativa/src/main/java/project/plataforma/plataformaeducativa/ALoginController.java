@@ -1,3 +1,8 @@
+/**
+ * @author Rodrigo García Calvo & Ivan Ortiz Maura
+ * @since 15/05/2022
+ */
+
 package project.plataforma.plataformaeducativa;
 
 import javafx.event.ActionEvent;
@@ -11,10 +16,11 @@ import java.sql.Statement;
 public class ALoginController {
 
     @FXML
-    private TextField usuario, contraseña;
+    private TextField usuario, contrasenya;
 
 
     @FXML
+    //Comprueba los credenciales para acceder al panel de administrador.
     public void acceder(ActionEvent event){
 
         Statement stat = null;
@@ -26,7 +32,7 @@ public class ALoginController {
             ResultSet rs = stat.executeQuery(query);
 
             if(rs.next()){
-                if(rs.getString("contraseña").equals(contraseña.getText())){
+                if(rs.getString("contraseña").equals(contrasenya.getText())){
 
                     Ventana.cerrarVentanaActual(event);
                     Ventana.abrirVentana("Pantalla_APanel");
@@ -62,6 +68,7 @@ public class ALoginController {
     }
 
     @FXML
+    //Permite cambiar a la ventana de inicio de sesión en modo usuario.
     public void modoUsuario(ActionEvent e){
         Ventana.cerrarVentanaActual(e);
         Ventana.abrirVentana("Pantalla_Login");

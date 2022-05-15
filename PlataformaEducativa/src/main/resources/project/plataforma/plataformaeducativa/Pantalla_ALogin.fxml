@@ -24,7 +24,7 @@
             <font>
                 <Font name="System Bold" size="12.0" />
             </font></Button>
-        <PasswordField fx:id="contraseña" focusTraversable="false" layoutX="46.0" layoutY="193.0" />
+        <PasswordField fx:id="contrasenya" focusTraversable="false" layoutX="46.0" layoutY="193.0" />
         <Button layoutX="195.0" layoutY="271.0" mnemonicParsing="false" onAction="#modoUsuario" prefHeight="8.0" prefWidth="19.0" style="-fx-background-color: #E1DE8B;">
             <graphic>
                 <ImageView fitHeight="17.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
